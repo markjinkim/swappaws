@@ -5,7 +5,7 @@ Finally, relief for pet owners and their families has arrived.  We have created 
 
 ### Details
 * Ruby on Rails web application
-* Makes heavy use of ERB templating, jQuery, AJAX, and Materialize
+* Makes heavy use of Material Design, HTML, CSS, Javascript, Rails, Ruby, and ERB
 * ___Ruby Version___: 2.3.4
 * ___Rails Version___: 5.1.3
 * ___Database___: PostgreSQL 0.18

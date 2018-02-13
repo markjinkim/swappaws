@@ -428,6 +428,12 @@ input[type=text], input[type=password], input[type=textarea], textarea {
 .pad-t-6 {
   padding-top: 6em;
 }
+.pad-t-25 {
+  padding-top: 25em;
+}
+.pad-t-32 {
+  padding-top: 32em;
+}
 
 .pad-r-4 {
   padding-right: 4em;

@@ -1,20 +1,19 @@
 Rails.application.routes.draw do
-  root 'users#show'
+  root 'pets#index'
   devise_for :users
   resources :users
   get '/profile' => 'users#show', :as => :profile
   put '/profile' => 'users#update_photo'
 
   get '/success' => 'events#success'
+  # put '/events/:id/book' => 'events#book_event'
 
-  devise_scope :user do
-    get 'login', to: 'devise/sessions#new'
-  end
-  
   resources :pets
 
+  # get '/success' => 'events#success'
   get '/purchase' => 'users#purchase'
   patch '/update_tokens' => 'users#update_tokens'
+  # get '/confirmation' => 'events#confirmation'
 
   resources :events do
     resources :reviews, shallow: true
@@ -29,3 +28,5 @@ Rails.application.routes.draw do
     end
   end
 end
+
+

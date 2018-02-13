@@ -1,55 +1,54 @@
 <div class="row pad-t-1">
   <div class="col s9">
     <div class="card-panel">
-      <h4 class="flow-text pad-b-1 teal-text">Login</h4>
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-          <div class="red-text small-font">
-            <h6>
-              <%= devise_error_messages! %>
-            </h6>
-          </div>
-
-          <div class="row">
-            <div class="col s12">
-              <div class="field input-field">
-                <%= f.label :email %>
-                <%= f.email_field :email, autofocus: true %>
-              </div>
+      <h4 class="flow-text pad-b-1 teal-text">Welcome Back!</h4>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="row">
+          <div class="col s12">
+            <div class="field input-field">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true %>
             </div>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col s12">
-              <div class="field input-field active">
-                <%= f.label :password %>
-                <%= f.password_field :password, autocomplete: "on" %>
-              </div>
+        <div class="field"><div class="row">
+          <div class="col s12">
+            <div class="field input-field active">
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "off" %>
             </div>
           </div>
+        </div>
 
-          <% if devise_mapping.rememberable? -%>
-            <div class="field">
-              <%= f.check_box :remember_me %>
-              <%= f.label :remember_me %>
-            </div>
-          <% end %>
-
+        <% if devise_mapping.rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end -%>
+        <div class="pad-t-1">
           <div class="actions waves-effect waves-light btn pad-b-1">
             <div class="pad-b-1">
               <%= f.submit "Log in" %>
             </div>
           </div>
-        <% end %>
-
+        </div>
+      <% end %>
+      <div class="row pad-t-1">
         <%= render "devise/shared/links" %>
+      </div>
+    </div>
     </div>
   </div>
+
   <div class="col s3 push-9">
     <div class="pad-t-3">
       <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
-      <span class="flow-text teal-text">Login to join pet care network</span>
+      <span class="flow-text teal-text">Log in to join pet care network</span>
     </div>
   </div>
+
   <div class="col s3 push-9">
     <div class="pad-t-6">
       <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>

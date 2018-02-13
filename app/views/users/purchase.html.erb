@@ -4,7 +4,7 @@
   <div class="col s12 m8 l8 offset-l1">
   <div class="card-panel pad-2">
 <h4 class="flow-text">Purchase more Tokens</h4>
-<%= form_for @user, :url => url_for(:controller => 'users', :action => 'update_tokens') do |f| %>
+<%= form_for @user, url: url_for(controller: 'users', action: 'update_tokens') do |f| %>
 
 <%= f.hidden_field :user_id, value: current_user.id %>
 
@@ -30,7 +30,7 @@
 </div>
 <div class="col s12 m5 l5 offset-l1">
   <p>
-    <%= f.submit "Complete Purchase", :class=>"waves-light waves-effect btn" %>
+    <%= f.submit "Complete Purchase", class: "waves-light waves-effect btn" %>
   </p>
   </div>
   </div>

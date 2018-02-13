@@ -31,29 +31,9 @@ $(document).ready(function() {
   setInterval(function() {
     $('.carousel').carousel('next');
   }, 2400)
-  // $('.carousel').carousel({
-  //         full_width:true,
-  //         time_constant: 100
-  //       });
-  //
-  //       var carouselAutoplay = setInterval(function(){
-  //             $('.fa-angle-right').click();
-  //           }, 7000);
-  //
-  //       $('.fa-angle-right').click(function(){
-  //         $('.carousel').carousel('next');
-  //         clearInterval(carouselAutoplay);
-  //         carouselAutoplay = setInterval(function(){
-  //             $('.fa-angle-right').click();
-  //           }, 7000);
-  //       });
-  //       $('.fa-angle-left').click(function(){
-  //         $('.carousel').carousel('prev');
-  //         clearInterval(carouselAutoplay);
-  //         carouselAutoplay = setInterval(function(){
-  //             $('.fa-angle-right').click();
-  //           }, 7000);
-  //     });
+
+  Materialize.updateTextFields();
+
   $(".button-collapse").sideNav();
 
 })

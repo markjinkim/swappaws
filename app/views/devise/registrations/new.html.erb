@@ -1,5 +1,5 @@
 <div class="row pad-t-1">
-  <div class="col s12 m10 l9">
+  <div class="col s9">
     <div class="card-panel">
       <h4 class="flow-text teal-text">Signup</h4>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -11,14 +11,14 @@
           <div class="row">
             <div class="col s12 m6 l6">
               <div class="field input-field">
-                <%= f.label :first_name %><br />
+                <%= f.label :first_name %>
                 <%= f.text_field :first_name, autofocus: true %>
               </div>
             </div>
             <div class="col s12 m6 l6">
               <div class="field input-field">
-                <%= f.label :last_name %><br />
-                <%= f.text_field :last_name, autofocus: true %>
+                <%= f.label :last_name %>
+                <%= f.text_field :last_name %>
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@
             <div class="col s12">
               <div class="field input-field">
                 <%= f.label :street_address %><br />
-                <%= f.text_field :street_address, autofocus: true %>
+                <%= f.text_field :street_address %>
               </div>
             </div>
           </div>
@@ -36,13 +36,13 @@
             <div class="col s12 m6 l6">
               <div class="field input-field input-field">
                 <%= f.label :city %><br />
-                <%= f.text_field :city, autofocus: true %>
+                <%= f.text_field :city %>
               </div>
             </div>
             <div class="col s12 m6 l6">
               <div class="field input-field">
                 <%= f.label :state %><br />
-                <%= f.text_field :state, autofocus: true %>
+                <%= f.text_field :state %>
               </div>
             </div>
           </div>
@@ -50,8 +50,8 @@
           <div class="row">
             <div class="col s12">
               <div class="field input-field">
-                <%= f.label :email %><br />
-                <%= f.email_field :email, autofocus: true %>
+                <%= f.label :email %>
+                <%= f.email_field :email %>
               </div>
             </div>
           </div>
@@ -61,32 +61,45 @@
               <div class="field">
                 <%= f.label :password %>
                 <% if @minimum_password_length %>
-                <em>(<%= @minimum_password_length %> characters minimum)</em>
-                <% end %><br />
+                <i><small>(<%= @minimum_password_length %> characters minimum)</small></i>
+                <% end %>
                 <%= f.password_field :password, autocomplete: "off" %>
               </div>
             </div>
             <div class="col s12 m6 l6">
               <div class="field">
-                <%= f.label :password_confirmation %><br />
+                <%= f.label :password_confirmation %>
                 <%= f.password_field :password_confirmation, autocomplete: "off" %>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m6 l6">
-            <div class="field input-field">
-              <%= f.label :Tell_us_a_bit_about_yourself %><br />
-              <%= f.text_area :bio, autofocus: true, size: "30x30" %>
+          <div class="row">
+            <div class="col s12">
+              <div class="field input-field">
+                <i class="material-icons prefix">mode_edit</i>
+                <%= f.label :Tell_us_a_bit_about_yourself%>
+                <%= f.text_area :bio, size: "30x30", class: "materialize-textarea" %>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="actions waves-effect waves-light btn">
-        <%= f.submit "Sign up" %>
-      </div>
-    <% end %>
+          <div class="actions waves-effect waves-light btn">
+            <%= f.submit "Sign up" %>
+          </div>
+        <% end %>
+    </div>
   </div>
-<%#= render "devise/shared/links" %>
+  <div class="col s3 push-9">
+    <div class="pad-t-1">
+      <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
+      <span class="flow-text teal-text">Sign up to join pet care network</span>
+    </div>
+  </div>
+  <div class="col s3 push-9">
+    <div class="pad-t-32">
+      <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
+      <span class="flow-text teal-text">Details about hobbies, interests help personalize your experience
+      </span>
+    </div>
+  </div>
 </div>

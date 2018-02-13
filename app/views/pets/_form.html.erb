@@ -16,80 +16,88 @@
   <div class="row">
     <div class="col s9">
       <div class="card-panel">
-    <div class="row">
-      <div class="col s12 m6 l6 input-field">
-        <p>
-          <%= f.label :name %>
-          <%= f.text_field :name, autofocus: true %>
-        </p>
-      </div>
-      <div class="col s12 m6 l6 input-field">
-        <p>
-          <%= f.label :age %>
-          <%= f.number_field :age %>
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m6 l6 input-field">
-        <p>
-          <%= f.label :breed %>
-          <%= f.text_field :breed %>
-        </p>
-      </div>
-      <div class="col s12 m6 l6 input-field">
-        <p>
-          <%= f.label :size %>
-          <%= f.select :size, ['small', 'medium', 'large', 'very large']%>
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s12 m6 l6 input-field">
-        <p>
-          <i class="material-icons prefix">mode_edit</i>
-          <%= f.label :description %>
-          <%= f.text_area :description, class: "materialize-textarea", size: "20x20" %>
-        </p>
-      </div>
-        <!-- # This will need to be adjusted in both the migration and this form field for images -->
-      <div class="col s12 m6 l6 input-field">
-        <p>
-          <div class="pad-2">
-            <%= f.label :photo %>
-            <%= f.file_field :photo %>
+        <div class="row">
+          <div class="col s12 m6 l6 input-field">
+            <p>
+              <%= f.label :name %>
+              <%= f.text_field :name, autofocus: true %>
+            </p>
           </div>
-        </p>
-      </div>
-    </div>
+          <div class="col s12 m6 l6 input-field">
+            <p>
+              <%= f.label :age %>
+              <%= f.number_field :age %>
+            </p>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="col s6">
-        <div class="pad-t-1">
-        <%= link_to 'Back', profile_path, class: "wave-effect waves-light btn" %>
+        <div class="row">
+          <div class="col s12 m6 l6 input-field">
+            <p>
+              <%= f.label :breed %>
+              <%= f.text_field :breed %>
+            </p>
+          </div>
+          <div class="col s12 m6 l6 input-field">
+            <p>
+              <%= f.label :size %>
+              <%= f.select :size, ['small', 'medium', 'large', 'very large']%>
+            </p>
+          </div>
+        </div>
+
+        <!-- # This will need to be adjusted in both the migration and this form field for images -->
+        <div class="row">
+          <div class="col s12">
+            <p>
+              <%= f.label :photo %>
+              <div class="pad-2 file-field">
+                <div class="btn">
+                  <span>Upload</span>
+                  <%= f.file_field :photo, class: "file-path validate" %>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="row pad-t-3">
+          <div class="col s12 input-field">
+            <div class="pad-t-3">
+              <p>
+                <i class="material-icons prefix">mode_edit</i>
+                <%= f.label :description %>
+                <%= f.text_area :description, class: "materialize-textarea", size: "20x20" %>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6">
+            <div class="pad-t-1">
+              <%= link_to 'Back', profile_path, class: "wave-effect waves-light btn" %>
+            </div>
+          </div>
+          <div class="col s6 pad-s-1">
+            <p>
+              <%= f.submit 'Submit', class: "waves-light waves-effect btn" %>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col s6 pad-s-1">
-      <p>
-        <%= f.submit 'Submit', class: "waves-light waves-effect btn" %>
-      </p>
-    </div>
-  </div>
+     <div class="col s3 push-9">
+       <div class="pad-t-1">
+         <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
+         <span class="flow-text teal-text">Tell us about your furry friend</span>
+       </div>
+     </div>
+     <div class="col s3 push-9">
+       <div class="pad-t-6">
+         <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
+         <span class="flow-text teal-text">It's important to mention your pet's diet restrictions, personality, and mannerisms</span>
+       </div>
      </div>
    </div>
-   <div class="col s3 push-9">
-     <div class="pad-t-1">
-       <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
-       <span class="flow-text teal-text">Tell us about your furry friend</span>
-     </div>
-   </div>
-   <div class="col s3 push-9">
-     <div class="pad-t-6">
-       <%= image_tag("light_bulb.gif", alt: "light bulb", size: '30x30') %>
-       <span class="flow-text teal-text">It's important to mention your pet's diet restrictions, personality, and mannerisms</span>
-     </div>
-   </div>
-  </div>
 <% end %>

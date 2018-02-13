@@ -5,7 +5,8 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4"><strong><%= @pet.name %></strong><i class="material-icons right">more_vert</i></span>
-      <p><%= link_to 'Back', profile_path %></p>
+      <p><%= link_to 'Profile', profile_path %></p>
+      <p><%= link_to 'Back', edit_pet_path %></p>
     </div>
     <div class="card-reveal">
       <span class="card-title activator grey-text text-darken-4"><strong><%= @pet.name %></strong><i class="material-icons right">close</i></span>

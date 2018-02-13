@@ -1,8 +1,32 @@
-<h2 class="flow-text"><%= @pet.name %></h2>
-<ul>
-  <li>Age: <%= @pet.age %></li>
-  <li>Breed: <%= @pet.breed %></li>
-  <li>Size: <%= @pet.size %></li>
-  <li>Description: <%= @pet.description %></li>
-  <li><%= image_tag @pet.photo.url(:medium) %></li>
-</ul>
+<div class="container">
+  <div class="card large sticky-action">
+    <div class="card-image waves-effect waves-block waves-light">
+      <%= image_tag @pet.photo.url(:medium), class: "activator", size: "100x400" %>
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><strong><%= @pet.name %></strong><i class="material-icons right">more_vert</i></span>
+      <p><%= link_to 'Back', profile_path %></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title activator grey-text text-darken-4"><strong><%= @pet.name %></strong><i class="material-icons right">close</i></span>
+      <ul class="flow-text">
+        <div class="row">
+          <div class="col s3">
+            <li><strong>Age: </strong><%= @pet.age %></li>
+          </div>
+          <div class="col s5">
+            <li><strong>Breed: </strong><%= @pet.breed %></li>
+          </div>
+          <div class="col s4">
+            <li><strong>Size: </strong><%= @pet.size %></li>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s9">
+            <li><strong>Description: </strong><%= @pet.description %></li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

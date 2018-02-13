@@ -10,8 +10,8 @@
           <li><%= date_time_helper(event.end_date_time) %></li>
         </div>
         <div class="col s3 m3 l2">
-          <li><%= link_to('Update Event', edit_event_path(event), :class => 'waves-effect waves-light btn') %></li><br>
-          <li><%= link_to('See more...', event_path(event), :class => 'waves-effect waves-light btn') %></li><br>
+          <li><%= link_to('Update Event', edit_event_path(event), class: 'waves-effect waves-light btn') %></li><br>
+          <li><%= link_to('See more...', event_path(event), class: 'waves-effect waves-light btn') %></li><br>
         </div>
       </div>
     <% end %>

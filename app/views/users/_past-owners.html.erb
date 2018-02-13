@@ -12,7 +12,7 @@
         </div>
         <div class="col s3 m3 l2">
           <% unless Review.find_by(event: event, type_reviews: 'owner') %>
-            <li> <%= link_to('Review', new_event_review_path(event), :class => 'waves-effect waves-light btn') %></li>
+            <li> <%= link_to('Review', new_event_review_path(event), class: 'waves-effect waves-light btn') %></li>
           <% end %>
           <% else %>
         <li>No reviews awaiting your attention</li>

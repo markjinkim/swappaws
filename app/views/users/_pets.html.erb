@@ -2,7 +2,7 @@
   <div class="col s4">
     <h4 class="flow-text pad-t-2">My pets</h4>
   </div>
-  <div class="col s6 pad-t-4">
+  <div class="col s6">
     <div class="pad-t-4">
     <%= link_to('Add Pet', new_pet_path, { class: "waves-effect waves-light btn" } ) %>
     </div>
@@ -28,7 +28,7 @@
                     <li><strong>Breed: </strong><%= pet.breed %></li>
                     <li><strong>Size: </strong><%= pet.size %></li>
                     <div class="s4 pad-t-1">
-                      <li class="pad-b-2"><%= link_to('Update Pet', edit_pet_path(pet), :class => 'waves-effect waves-light btn') %></li>
+                      <li class="pad-b-2"><%= link_to('Update Pet', edit_pet_path(pet), class: 'waves-effect waves-light btn') %></li>
                     </div>
                   </div>
                 </div>

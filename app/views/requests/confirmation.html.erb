@@ -11,13 +11,13 @@
   </div>
   <div class="col s6 m5 l4 offset-l2">
     <%= form_for [@event, @request], url: confirmed_confirmation_event_request_path(@request) do |f| %>
-      <%= f.hidden_field :approved, :value => "true" %>
-      <%= f.submit "Approve", :class=>'waves-light waves-effect btn' %><br>
+      <%= f.hidden_field :approved, value: "true" %>
+      <%= f.submit "Approve", class: 'waves-light waves-effect btn' %><br>
     <% end %>
     <br>
     <%= form_for [@event, @request], url: denied_confirmation_event_request_path(@request) do |fr| %>
-      <%= fr.hidden_field :approved, :value => "false" %>
-      <%= fr.submit "Reject", :class=>'waves-light waves-effect btn' %>
+      <%= fr.hidden_field :approved, value: "false" %>
+      <%= fr.submit "Reject", class: 'waves-light waves-effect btn' %>
     <% end %>
   </div>
 </div>
@@ -51,5 +51,3 @@
     </ul>
   </div>
 </div>
-
-

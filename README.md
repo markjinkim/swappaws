@@ -9,7 +9,7 @@ Pet owners can trade services with other pet owners as well as purchase services
 ### Details on Coding Languages and Frameworks Used on the Project
 * Ruby on Rails web application
 * Front End: Material Design, HTML, CSS, Javascript
-* Back End: Rails, Ruby, and ERB
+* Back End: Rails, Ruby, PostgreSQL and ERB
 * ___Ruby Version___: 2.3.4
 * ___Rails Version___: 5.1.3
 * ___Database___: PostgreSQL 0.18

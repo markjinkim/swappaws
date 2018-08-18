@@ -27,7 +27,7 @@ Pet owners can trade services with other pet owners as well as purchase services
 ![Host Event gif](/public/host_an_event.gif)
 
 ## Demo
-To view the deployed site please click [here](http://guide-san-diego.herokuapp.com/) 
+To view the deployed site please click [here](http://swappaws.herokuapp.com/pets) 
 
 ## Getting Started
 ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
@@ -42,19 +42,18 @@ Open the project's root directory
 cd welcome-to-sd
 ```
 
-Use npm to install package dependencies
-
+Use the bundler to install gem dependencies
 ```
-npm install
+bundle install
 ```
 
 Start the local server
 
 ```
-nodemon server
+rails server
 ```
 
-That's it, now the app should be running on <http://localhost:8000>. 
+That's it, now the app should be running on <http://localhost:3000>. 
 
 
 ## Author

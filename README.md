@@ -6,18 +6,19 @@ Pet owners can trade services with other pet owners as well as purchase services
 
 ![Create Event gif](/public/create_an_event.gif)
 
-### Details on Coding Languages and Frameworks Used on the Project
+## Details on Coding Languages and Frameworks Used on the Project
 * Ruby on Rails web application
 * Front End: Material Design, HTML, CSS, Javascript
 * Back End: Rails, Ruby, PostgreSQL and ERB
 * ___Ruby Version___: 2.3.4
 * ___Rails Version___: 5.1.3
 * ___Database___: PostgreSQL 0.18
+
 ## Dependencies and API's
 * Puma 3.7
 * Devise, AWS S3
 * Geolocation API
-* Paperclip
+* Paperclip API
 * Materialize CDN
 * jQuery
 
@@ -25,9 +26,39 @@ Pet owners can trade services with other pet owners as well as purchase services
 
 ![Host Event gif](/public/host_an_event.gif)
 
+## Demo
+To view the deployed site please click [here](http://guide-san-diego.herokuapp.com/) 
+
+## Getting Started
+![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
+
+## How to run this app on a local server
+
+Clone the repo
+
+Open the project's root directory
+
+```
+cd welcome-to-sd
+```
+
+Use npm to install package dependencies
+
+```
+npm install
+```
+
+Start the local server
+
+```
+nodemon server
+```
+
+That's it, now the app should be running on <http://localhost:8000>. 
+
+
 ## Author
-Mark Kim 
+***Mark Kim*** - [*more work*](https://github.com/markjnkim)
+
 ## Collaboration
 Built with :heart: in collaboration with [BlakeMeyer](https://github.com/blakeynwa) and [CarterMcGee](https://github.com/carterm912).
-
-

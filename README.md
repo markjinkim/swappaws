@@ -1,12 +1,15 @@
 <img src="https://github.com/markjnkim/swappaws/blob/master/app/assets/images/swap_paws_logo.png" width="300" />
 
 ## Description
-This mobile responsive full stack web application is able to create a social network based around like minded pet owners that can assist one another with pet care.  The app is able to create events with users capable of taking on dual roles, as an owner of an event(The Host and Pet Sitter) or the participant in an event(The Guest and Pet to be watched).
-Pet owners can trade services with other pet owners as well as purchase services. 
+This mobile responsive full stack web application is able to create a social network based around like minded pet owners that can assist one another with pet care.  
+The potential pet sitters are able to create availability(events) that pet owners can book accordingly.
+Other metrics to evaluate before booking a pet sitter are also included such as distance and ratings.
+Pet owners can trade or purchase services with other pet owners. 
+
 
 ![Create Event gif](/public/create_an_event.gif)
 
-## Details on Coding Languages and Frameworks Used on the Project
+## Details on Coding Languages and Frameworks 
 * Ruby on Rails web application
 * Front End: Material Design, HTML, CSS, Javascript
 * Back End: Rails, Ruby, PostgreSQL and ERB
